@@ -1,0 +1,194 @@
+main{
+    padding: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-content h2{
+    margin-bottom: 2%;
+    font-size: 2.2em;
+}
+
+.main-content .text{
+    margin-bottom: 3%;
+}
+
+.main-content .text p{
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+main figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main figure img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 6%;
+    border: 1px #00ef00 solid;
+    transition: 0.2s ease-in-out;
+}
+
+main figure img:hover{
+    box-shadow: 0 0 6px #00e0ff;
+}
+
+header{
+    background-color: #222;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 2.6em;
+    font-weight: 200;
+    cursor: pointer;
+
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+
+header h1 a{
+    color: #1399d8;
+    transition: 0.2s ease-in-out;
+}
+
+header h1:hover, a:hover{
+    color: #fff;
+}
+
+main .techs .cards-container{
+    display: flex;
+    align-items: center;
+}
+
+main .techs .cards-container .card{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-right: 0.9em;
+    margin-left: 0.9em;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .techs .cards-container .card img{
+    width: 70%;
+}
+
+main .techs .cards-container .card:hover{
+    box-shadow: 0 0 8px #00e0ff;
+    transition: 0.3s ease-in-out;
+}
+
+main.cards-container .card:last-child{
+    background-color: transparent;
+}
+
+footer{
+    background-color: #222;
+    padding: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+@media (max-width: 1200px){
+    main{
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+
+    main .main-content .text, .techs{
+        text-align: center;
+    }
+
+    main .main-content .text p{
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    main .techs .cards-container, .main-content .text p{
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 24px;
+    }
+
+    header nav a{
+        font-size: 1em;
+    }
+
+    main .techs .cards-container .card{
+        width: 60px;
+        height: 60px;
+    }
+
+    main .main-content .text h2, .main-content .techs h2{
+        font-size: 1.8em;
+    }
+
+    main figure img{
+        width: 250px;
+        height: 250px;
+
+    }
+}
